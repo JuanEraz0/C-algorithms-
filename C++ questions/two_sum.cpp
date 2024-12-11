@@ -62,7 +62,7 @@ public:
 
     }
     vector<int> twoSum(vector<int>& nums, int &target) {
-        pmr::unordered_map<int, int > Hash;
+        unordered_map<int, int > Hash;
 
         for(int i=0; i< nums.size(); i++){
             Hash[nums[i]]=i;    // <1,0> 
@@ -88,7 +88,7 @@ public:
 
 int main(){
     vector<int> nums = {1,2,3,4,5};
-    int x = 6;
+    int x = 7;
     int *ptr = &x;
     
     Solution solution = Solution();
