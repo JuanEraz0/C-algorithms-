@@ -35,8 +35,10 @@ class A : public Base{
 
 
 int main(){
-    Base *base = new A; // creando puntero base que apunta a A en heap
+    Base *base = new A; //en compilacion 
+    
     base->baseMethod();
+
     delete base;
     return 0;
 
