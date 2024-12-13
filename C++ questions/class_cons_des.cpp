@@ -18,7 +18,7 @@ class Base{
 };
 
 class A : public Base{
-    void method(){
+    virtual void method(){
         cout<<" from A "<<endl;
     };
 
@@ -35,7 +35,7 @@ class A : public Base{
 
 
 int main(){
-    Base *base = new A; //en compilacion 
+    Base *base = new A; //en compilacion estatica base es de tipo Base, en dinamica se comporta como A, depende del tipo de metodo si es virtual o no
     
     base->baseMethod();
 
