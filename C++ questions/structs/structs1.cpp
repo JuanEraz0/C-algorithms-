@@ -37,6 +37,16 @@ struct coleccion_CD
 int main(){
     coleccion_CD CD1;
     strcpy(CD1.artista, "Juan");
+    strcpy(CD1.titulo, "programacion ");
+    strcpy(CD1.fecha_compra, "23-06-1998");
+
+    CD1.numCanciones = 23;
+    CD1.precio=455.6;
+
     cout << "Artista: " << CD1.artista << endl;
+    cout << "Titulo : " << CD1.titulo << endl;
+    cout << "Fecha de compra: "<<CD1.fecha_compra<<endl;
+    cout<<"Numero de canciones: "<<CD1.numCanciones<<endl;
+    cout<<"Precio: "<<CD1.precio<<endl;
 
 }
